@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.usegson.MainActivity">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/song"/>
+    <Button
+        android:onClick="click1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动态拼接Json"/>
+    <Button
+        android:onClick="click2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Json解析"/>
+    <Button
+        android:onClick="click3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gson解析"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="解析内容如下"/>
+    </ScrollView>
+</LinearLayout>
